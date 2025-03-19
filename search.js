@@ -6,7 +6,7 @@ async function buscarPublicacoesPorPais(pais) {
     const url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi';
     const params = {
         db: 'pubmed',
-        term: `"Facial Analysis" AND "${pais}"`,
+        term: `Facial Analysis AND ${pais}`,
         retmax: '0',  // Queremos apenas o número total de publicações
         retmode: 'xml'
     };
